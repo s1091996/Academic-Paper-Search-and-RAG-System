@@ -52,8 +52,7 @@ Academic-Paper-Search-and-RAG-System/
 | --- | --- |
 | app.py | 系統主程式；使用 Gradio 建立網頁介面，提供論文搜尋與問答兩個介面。 |
 | paper_search.py | 論文搜尋邏輯；串接 OpenAlex 與 arXiv API，並使用 LLM 評估論文與生成摘要。 |
-| 
-ag.py | RAG 檢索增強系統；負責 PDF 下載、文字萃取、文字切塊、FAISS 向量索引建立與問答生成。 |
+| rag.py | RAG 檢索增強系統；負責 PDF 下載、文字萃取、文字切塊、FAISS 向量索引建立與問答生成。 |
 | llm.py | 封裝 Groq API 呼叫；負責產生搜尋關鍵字以及評估論文是否符合需求並輸出 JSON 格式摘要。 |
 | config.py | 專案全域設定；定義 LLM 模型名稱、OpenAlex 使用者 Email、文字切塊大小與搜尋論文數量等參數。 |
 | utils.py | 輔助工具函式|
