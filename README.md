@@ -60,36 +60,30 @@ Academic-Paper-Search-and-RAG-System/
 | .gitignore | Git 忽略規則；排除虛擬環境、暫存檔、.env 與下載的 PDF 資料夾。 |
 | README.md | 專案說明文件。 |
 
-## 5. 安裝與快速開始（Installation & Quick Start）
+5. 安裝與快速開始（Installation & Quick Start）
+必要環境
+Python 3.8 或以上版本
+具備有效之 Groq API 金鑰
+安裝步驟
+Windows (PowerShell)
+powershell
 
-### 必要環境
 
-- Python 3.8 或以上版本
-- 具備有效之 Groq API 金鑰
-
-### 安裝步驟
-
-#### Windows (PowerShell)
-
-`powershell
 # 1. 複製專案
 git clone https://github.com/s1091996/Academic-Paper-Search-and-RAG-System.git
-
 # 2. 進入專案目錄
 cd Academic-Paper-Search-and-RAG-System
-
 # 3. 建立虛擬環境
 python -m venv venv
-
 # 4. 啟動虛擬環境
 venv\Scripts\activate
-
 # 5. 安裝必要套件
 pip install gradio pyalex groq pymupdf faiss-cpu sentence-transformers python-dotenv requests
-
 # 6. 設定環境變數
 # 請在專案根目錄新增 .env 檔案，並填入您的 Groq API 金鑰：
 # GROQ_API_KEY=your_groq_api_key_here
+# 7. 啟動程式
+python app.py
 
 # 7. 啟動程式
 python app.py
