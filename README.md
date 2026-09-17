@@ -17,7 +17,7 @@
 
 ## 3. 系統流程／架構（System Architecture）
 
-`	ext
+```text
 使用者輸入研究需求
         ↓
 LLM 生成多組搜尋關鍵字
@@ -31,11 +31,11 @@ LLM 評估論文相關性並生成中文摘要
 PDF 文字提取、切塊與 FAISS 向量索引建立
         ↓
 使用者提問 → 檢索最相關片段 → LLM 生成繁體中文回答
-`
+```
 
 ## 4. 專案結構（Project Structure）
 
-`	ext
+```text
 Academic-Paper-Search-and-RAG-System/
 ├── .env
 ├── .gitignore
@@ -46,7 +46,7 @@ Academic-Paper-Search-and-RAG-System/
 ├── paper_search.py
 ├── rag.py
 └── utils.py
-`
+```
 
 | 檔案 | 用途 |
 | --- | --- |
