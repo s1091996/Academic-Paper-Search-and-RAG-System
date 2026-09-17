@@ -85,10 +85,6 @@ cd Academic-Paper-Search-and-RAG-System
 ```bash
 python -m venv venv
 ```
-- Linux / macOS：
-```bash
-python3 -m venv venv
-```
 
 4. **啟動虛擬環境**
 - Windows：
